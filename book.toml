@@ -10,3 +10,6 @@ edition = "2021"
 
 [output.html]
 mathjax-support = true
+
+[build]
+build-dir = "./docs"

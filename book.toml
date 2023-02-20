@@ -1,0 +1,12 @@
+[book]
+authors = ["tokunaga"]
+language = "ja"
+multilingual = false
+src = "src"
+title = "Pitch-Deck-Origin"
+
+[rust]
+edition = "2021"
+
+[output.html]
+mathjax-support = true

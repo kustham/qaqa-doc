@@ -1,0 +1,274 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Pitch-Deck-Origin</title>
+        <meta name="robots" content="noindex" />
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="intro.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="problem.html"><strong aria-hidden="true">2.</strong> Problem</a></li><li class="chapter-item expanded "><a href="solution.html"><strong aria-hidden="true">3.</strong> Solution</a></li><li class="chapter-item expanded "><a href="market.html"><strong aria-hidden="true">4.</strong> Market and Opportunity</a></li><li class="chapter-item expanded "><a href="business.html"><strong aria-hidden="true">5.</strong> Business Model</a></li><li class="chapter-item expanded "><a href="traction.html"><strong aria-hidden="true">6.</strong> Traction</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Pitch-Deck-Origin</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <!--
+My Opinion, or Fact?
+-->
+<h1 id="purpose"><a class="header" href="#purpose">Purpose</a></h1>
+<ul>
+<li>スポーツテック領域からすべてのマイナースポーツの活動をアシスト</li>
+<li>各スポーツに特化した独自システムの開発および運営支援</li>
+<li>独自配信プラットフォームの提供</li>
+</ul>
+<!--
+意思決定における重要な指標または行動規範
+-->
+<h1 id="targets"><a class="header" href="#targets">Targets</a></h1>
+<p>カバディを始めとした，普及ステージにあるすべてのスポーツ</p>
+<h1 id="mission-statement"><a class="header" href="#mission-statement">Mission Statement</a></h1>
+<ul>
+<li>Fact</li>
+<li>Asynchronous</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="課題認識"><a class="header" href="#課題認識">課題認識</a></h1>
+<p>あらゆるマイナースポーツに対し，「注目させる」支援プラットフォームが充足していない．</p>
+<p>メジャースポーツであれば，学校の授業や部活動，テレビ放送やその他配信プラットフォームによる観戦等が「始めるきっかけ」になり得る．ところが，マイナースポーツの場合，基本的に自動的な新規参入は見込めず，たまたま始めた人たちで成り立っているのが現状である．</p>
+<p>そもそも，スポーツとは何か．</p>
+<p>文部科学省スポーツ基本計画に記述されている，スポーツの捉え方を引用した．</p>
+<blockquote>
+<p>スポーツは、心身の健全な発達、健康及び体力の保持増進、精神的な充足感の獲得、自律心その他の精神の涵養等のために個人又は集団で行われる運動競技その他の身体活動であり、今日、国民が生涯にわたり心身ともに健康で文化的な生活を営む上で不可欠のもの</p>
+</blockquote>
+<p>単なる娯楽ではなく，文化的な暮らしをするために不可欠な身体活動といわれている．
+そして，この要件を満たす身体活動はメジャー・マイナー関係なくスポーツといえる．</p>
+<p>今まで関心が無かった人，ずっと継続していたスポーツから別のスポーツに転向したい人，観戦に興味がある人など，様々なバックボーンを持つ方たちがいる．</p>
+<p>このような方たちに向けて，それぞれの次の入り口にマイナースポーツという新たな選択肢を視野に含めていただく仕組みを構築することで，新規流入の安定化の一助となり，既存コミュニティの振興への貢献を目指す．</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="配信プラットフォーム"><a class="header" href="#配信プラットフォーム">配信プラットフォーム</a></h1>
+<h1 id="スポーツ協会の基幹システム"><a class="header" href="#スポーツ協会の基幹システム">スポーツ協会の基幹システム</a></h1>
+<h1 id="公式戦のデータライゼーション"><a class="header" href="#公式戦のデータライゼーション">公式戦のデータライゼーション</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><!--
+市場・機会の分析 (市場分析、市場規模、ターゲット層、競合情勢、市場の機会などを含める)
+-->
+<h1 id="市場規模"><a class="header" href="#市場規模">市場規模</a></h1>
+<p>総務省統計局の令和3年度社会生活基本調査によるスポーツ人口の調査結果を引用する．<sup class="footnote-reference"><a href="#1">1</a></sup></p>
+<blockquote>
+<p>男性が3831万人</p>
+<p>女性が3648万人</p>
+</blockquote>
+<p>内訳として，スポーツの種類別行動者率が以下となる．</p>
+<ul>
+<li>ウォーキング：44.3%</li>
+<li>筋トレ：12.9%</li>
+<li>ジョギング・マラソン：11.1%</li>
+<li>サイクリング：8.2%</li>
+<li>つり：7.8%</li>
+<li>登山：7.7%</li>
+<li>ゴルフ：6.9%</li>
+<li>野球：6.3%</li>
+<li>バドミントン：6.1%</li>
+<li>水泳：5.7%</li>
+<li>ヨガ：5.5%</li>
+<li>ボウリング：5.1%</li>
+<li>卓球：4.9%</li>
+<li>サッカー：4.7%</li>
+<li>バスケットボール：3.6%</li>
+<li>バレーボール：3.5%</li>
+</ul>
+<p>ここで，行動者率3.5%を下回るスポーツは表章されていない．</p>
+<!--
+顧客ニーズや要件，競合情勢，市場規模，市場成長率，トレンドなどを調査し，
+自社の製品やサービスがどのように差別化され，顧客にとってどのような価値を提供できるのかを明確にする
+自社のビジネスモデルやマーケティング戦略を適切に設計し，製品やサービスの開発や販売に取り組む
+-->
+<h1 id="市場検証"><a class="header" href="#市場検証">市場検証</a></h1>
+<h3 id="脚注"><a class="header" href="#脚注">脚注</a></h3>
+<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<p>職業スポーツ選手が仕事として行うものや，児童・生徒・学生が体育の授業で行うものは除き，クラブ活動や部活動は含む．</p>
+</div>
+<div style="break-before: page; page-break-before: always;"></div><!--
+製品やサービスを提供するためのビジネスモデルの説明、収益モデル、費用構造、利益率などを含める
+-->
+<h1 id="monetization"><a class="header" href="#monetization">Monetization</a></h1>
+<h1 id="value"><a class="header" href="#value">Value</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><!--
+実績の提示 (具体的な数字や実績、売上増加率、ユーザー数、利用者満足度などを含める)
+-->
+<h1 id=""><a class="header" href="#"></a></h1>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            MathJax.Hub.Register.StartupHook('End', function() {
+                window.setTimeout(window.print, 100);
+            });
+        });
+        </script>
+
+    </body>
+</html>

@@ -12,3 +12,7 @@
 - [ビジネスモデル](./business.md)
 - [トラクション](./traction.md)
 - [マイルストーン](./milestones.md)
+
+# Appendix
+
+  - [附録](./appendix.md)

@@ -5,8 +5,8 @@
 # Overview
 - [問題の認識](./problem.md)
 - [事業内容](./service.md)
+  - [マッチング機構の開発](./services/matching.md)
   - [配信プラットフォーム構築](./services/stream_live.md)
-  - [スタートアップマッチングサービス](./services/matching.md)
   - [スタッツデータ解析](./services/stats.md)
 - [市場分析](./market.md)
 - [ビジネスモデル](./business.md)

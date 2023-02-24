@@ -82,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="intro.html">概要</a></li><li class="chapter-item expanded affix "><li class="part-title">Overview</li><li class="chapter-item expanded "><a href="problem.html" class="active"><strong aria-hidden="true">1.</strong> 問題の認識</a></li><li class="chapter-item expanded "><a href="service.html"><strong aria-hidden="true">2.</strong> 事業内容</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="services/stream_live.html"><strong aria-hidden="true">2.1.</strong> 配信プラットフォーム構築</a></li><li class="chapter-item expanded "><a href="services/matching.html"><strong aria-hidden="true">2.2.</strong> スタートアップマッチングサービス</a></li><li class="chapter-item expanded "><a href="services/stats.html"><strong aria-hidden="true">2.3.</strong> スタッツデータ解析</a></li></ol></li><li class="chapter-item expanded "><a href="market.html"><strong aria-hidden="true">3.</strong> 市場分析</a></li><li class="chapter-item expanded "><a href="business.html"><strong aria-hidden="true">4.</strong> ビジネスモデル</a></li><li class="chapter-item expanded "><a href="traction.html"><strong aria-hidden="true">5.</strong> トラクション</a></li><li class="chapter-item expanded "><a href="milestones.html"><strong aria-hidden="true">6.</strong> マイルストーン</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="intro.html">概要</a></li><li class="chapter-item expanded affix "><li class="part-title">Overview</li><li class="chapter-item expanded "><a href="problem.html" class="active"><strong aria-hidden="true">1.</strong> 問題の認識</a></li><li class="chapter-item expanded "><a href="service.html"><strong aria-hidden="true">2.</strong> 事業内容</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="services/matching.html"><strong aria-hidden="true">2.1.</strong> マッチング機構の開発</a></li><li class="chapter-item expanded "><a href="services/stream_live.html"><strong aria-hidden="true">2.2.</strong> 配信プラットフォーム構築</a></li><li class="chapter-item expanded "><a href="services/stats.html"><strong aria-hidden="true">2.3.</strong> スタッツデータ解析</a></li></ol></li><li class="chapter-item expanded "><a href="market.html"><strong aria-hidden="true">3.</strong> 市場分析</a></li><li class="chapter-item expanded "><a href="business.html"><strong aria-hidden="true">4.</strong> ビジネスモデル</a></li><li class="chapter-item expanded "><a href="traction.html"><strong aria-hidden="true">5.</strong> トラクション</a></li><li class="chapter-item expanded "><a href="milestones.html"><strong aria-hidden="true">6.</strong> マイルストーン</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -144,17 +144,51 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="問題の認識"><a class="header" href="#問題の認識">問題の認識</a></h1>
-<p>あらゆるマイナースポーツに対し，「注目させる」支援プラットフォームが充足していない．</p>
-<p>メジャースポーツであれば，学校の授業や部活動，テレビ放送やその他配信プラットフォームによる観戦等が「始めるきっかけ」になり得る．ところが，マイナースポーツの場合，基本的に自動的な新規参入は見込めず，たまたま始めた人たちで成り立っているのが現状である．</p>
-<p>そもそも，スポーツとは何か．</p>
-<p>文部科学省スポーツ基本計画に記述されている，スポーツの捉え方を引用した．</p>
-<blockquote>
-<p>スポーツは、心身の健全な発達、健康及び体力の保持増進、精神的な充足感の獲得、自律心その他の精神の涵養等のために個人又は集団で行われる運動競技その他の身体活動であり、今日、国民が生涯にわたり心身ともに健康で文化的な生活を営む上で不可欠のもの</p>
-</blockquote>
-<p>単なる娯楽ではなく，文化的な暮らしをするために不可欠な身体活動と認められている．
-そして，この要件を満たす身体活動はメジャー・マイナー関係なくスポーツといえる．</p>
-<p>今まで関心が無かった人，ずっと継続していたスポーツから別のスポーツに転向したい人，観戦に興味がある人など，様々なバックボーンを持つ方たちがいる．</p>
-<p>このような方たちに向けて，それぞれの次の入り口にマイナースポーツという新たな選択肢を視野に含めていただく仕組みを構築することで，新規流入の安定化の一助となり，既存コミュニティの振興への貢献を目指す．</p>
+<p>あらゆる特定活動に対し，「注目させる」支援プラットフォームは整備されていない．</p>
+<p>メジャースポーツであれば，学校の授業や部活動，テレビ放送やその他配信プラットフォームによる観戦等が「始めるきっかけ」になり得る．
+ところが，マイナースポーツの場合，基本的に自動的な新規参入は見込めず，たまたま始めた人たちで成り立っているのが現状である．</p>
+<h1 id="募集の手法"><a class="header" href="#募集の手法">募集の手法</a></h1>
+<h2 id="チーム主体直接"><a class="header" href="#チーム主体直接">チーム主体(直接)</a></h2>
+<ol>
+<li>SNSでカバディをしたそうなユーザに声かけ</li>
+<li>知人を練習に招待</li>
+</ol>
+<p>マイナースポーツ，しかもスタートアップ段階の組織からの声かけや招待というのは，場合によっては怪しかったりむしろカルト集団じみた恐怖すら覚えさせてしまうケースがある．
+人によっては知人の顔を立てるために断りづらさを感じる人もいる．
+これでは募集どころか，忌避されてしまい本末転倒となってしまう．</p>
+<h2 id="コミュニティ主体間接"><a class="header" href="#コミュニティ主体間接">コミュニティ主体(間接)</a></h2>
+<ol>
+<li>体験会開催を入り口とした普及活動</li>
+</ol>
+<p>最も正規のルートといえる．
+ほとんどのスポーツには公式協会が設けられており，その組織が主催となり体験会を開く．
+そして参加した人が自主的に「継続」「体験のみ」を選択する．</p>
+<p>直接的な「やりましょう」が無い分，参加者としての緊張も薄い．</p>
+<h2 id="プレーヤー主体"><a class="header" href="#プレーヤー主体">プレーヤー主体</a></h2>
+<ol>
+<li>運営団体(協会)の公式Webサイトで募集中のチームを掲示</li>
+<li>協会主催ではない新規の非公式サイトでチーム一覧として掲示</li>
+<li>スーパー等の小売店にチラシ設置</li>
+</ol>
+<p>&quot;見る人がいるのか？&quot;に尽きる．
+これは，チームを探している，若しくはその特定活動を始めたいという予定プレイヤーがそのWebサイトに到着するかどうかにすべて委ねられている．
+ただし，「加入したくて探している」「体験したい」というプレーヤーの行動になるため，マッチングできた場合は継続率が期待できる．</p>
+<h1 id="検討方針"><a class="header" href="#検討方針">検討方針</a></h1>
+<p>期待値が最初からあるプレーヤーから行動した方が効率が良いのは自明である．
+しかし，マイナースポーツの場合はそのプレーヤーの母集団が小さいことが問題になる．</p>
+<p>かといって母集団を増やそうと直接的な手法を講じると逆に悪目立ちし，そのマイナースポーツ自体の品位を貶めることになる．
+あくまで，「自発的な参加」が促進される機構が推奨される．</p>
+<p>例えば，「灼熱カバディ©」の例は代表的で，漫画を読んだことでカバディへの興味が生まれ，体験会が足を運ぶ人もいる．
+Web漫画はいまや多くの人が閲覧するコンテンツであり，結果的にカバディの宣伝を効果的に実現した．
+広告宣伝を目的としている作品では無いのにも関わらず，カバディの競技人口増加に寄与したのは間違いない．</p>
+<p>重要な要素は以下となる．</p>
+<ul>
+<li>その特定活動の存在を知らない人が良く見るコンテンツ属性</li>
+<li>コンテンツそのものの魅力</li>
+</ul>
+<p>つまり，ペライチの広告で「カバディやろう」を見たところで，通り過ぎて終わる．
+SNSやWebで「募集中」と表示しても，未経験者からすると体験したいという動機に繋がってこない．</p>
+<p>それほど興味０の状態から新しい競技をはじめるというのはハードルが高い．</p>
 
                     </main>
 

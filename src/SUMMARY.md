@@ -15,4 +15,6 @@
 
 # Appendix
 
-  - [附録](./appendix.md)
+  - [附録A](./appendix.md)
+  - [附録B](./concept.md)
+  - [業務利用プロダクト](./facility.md)

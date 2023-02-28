@@ -10,11 +10,12 @@
   - [スタッツデータ解析](./services/stats.md)
 - [市場分析](./market.md)
 - [ビジネスモデル](./business.md)
+  - [予算計画](./budget.md)
 - [トラクション](./traction.md)
 - [マイルストーン](./milestones.md)
+- [体制](./org.md)
 
 # Appendix
 
   - [附録A](./appendix.md)
   - [附録B](./concept.md)
-  - [業務利用プロダクト](./facility.md)

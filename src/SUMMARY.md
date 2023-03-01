@@ -1,6 +1,6 @@
 # Summary
 
- [概要](./intro.md)
+ [Qaqaについて](./intro.md)
 
 # Overview
 - [問題の認識](./problem.md)

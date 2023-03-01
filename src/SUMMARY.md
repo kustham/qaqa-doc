@@ -2,7 +2,7 @@
 
  [Qaqaについて](./intro.md)
 
-# Overview
+-  [マニフェスト](./manifest.md)
 - [問題の認識](./problem.md)
 - [事業内容](./service.md)
   - [マッチング機構の開発](./services/matching.md)
@@ -12,7 +12,7 @@
 - [ビジネスモデル](./business.md)
   - [予算計画](./budget.md)
 - [トラクション](./traction.md)
-- [マイルストーン](./milestones.md)
+- [ロードマップ](./milestones.md)
 - [体制](./org.md)
 
 # Appendix

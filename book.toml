@@ -3,7 +3,7 @@ authors = ["tokunaga"]
 language = "ja"
 multilingual = false
 src = "src"
-title = "Pitch-Deck-Origin"
+title = "Qaqa-Pitch-Deck"
 
 [rust]
 edition = "2021"

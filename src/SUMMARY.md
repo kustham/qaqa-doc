@@ -1,8 +1,8 @@
 # Summary
 
- [Qaqaについて](./intro.md)
+ [Qaqaについて](./origin.md)
 
--  [マニフェスト](./manifest.md)
+- [マニフェスト](./manifest.md)
 - [問題の認識](./problem.md)
 - [事業内容](./service.md)
   - [マッチング機構の開発](./services/matching.md)
@@ -15,7 +15,7 @@
 - [ロードマップ](./milestones.md)
 - [体制](./org.md)
 
-# Appendix
+# 附録
 
-  - [附録A](./appendix.md)
-  - [附録B](./concept.md)
+- [コミュニティ](./appendix/community.md)
+- [コンセプト](./appendix/concept.md)

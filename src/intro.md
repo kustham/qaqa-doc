@@ -34,9 +34,9 @@ My Opinion, or Fact?
     - 調和する．
     - DX を言い訳に闇雲に破壊してはならない．
 
-4. Compliance
+4. Accountability
 
-    - 法的かつ倫理的なルールを遵守する．
+    - 論理的なポリシーに従うことが要請される．
 
 # 前提
 

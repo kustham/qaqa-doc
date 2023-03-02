@@ -2,7 +2,7 @@
 
  [Qaqaについて](./origin.md)
 
-- [マニフェスト](./manifest.md)
+- [マニフェスト骨子](./manifest.md)
 - [問題の認識](./problem.md)
 - [事業内容](./service.md)
   - [マッチング機構の開発](./services/matching.md)

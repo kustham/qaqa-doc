@@ -1,6 +1,6 @@
 # Summary
 
- [Qaqaについて](./intro.md)
+ [Qaqaについて](./origin.md)
 
 - [マニフェスト](./manifest.md)
 - [問題の認識](./problem.md)

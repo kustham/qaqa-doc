@@ -19,3 +19,4 @@
 
 - [コミュニティ](./appendix/community.md)
 - [コンセプト](./appendix/concept.md)
+- [広報](./appendix/pr.md)

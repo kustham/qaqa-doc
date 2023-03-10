@@ -150,7 +150,7 @@ My Opinion, or Fact?
 <h1 id="このドキュメントは何か"><a class="header" href="#このドキュメントは何か">このドキュメントは何か</a></h1>
 <ol>
 <li>Qaqaテクノロジーズの事業計画</li>
-<li>ソリューション「Dharma」の構想定義</li>
+<li>各ソリューションの構想定義</li>
 </ol>
 <h1 id="オリジン"><a class="header" href="#オリジン">オリジン</a></h1>
 <p>?最高のプロモーターになる．</p>
@@ -666,15 +666,46 @@ SNSやWebで「募集中」と表示しても，未経験者からすると体�
 <h2 id="github"><a class="header" href="#github">Github</a></h2>
 <p>PR効果はないかもしれない．</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ファシリティ"><a class="header" href="#ファシリティ">ファシリティ</a></h1>
-<h2 id="社内インフラ"><a class="header" href="#社内インフラ">社内インフラ</a></h2>
-<h3 id="メールサーバ"><a class="header" href="#メールサーバ">メールサーバ</a></h3>
-<p>迷いどころ．</p>
-<h3 id="vpn"><a class="header" href="#vpn">VPN</a></h3>
-<p>?todo</p>
-<h3 id="ファイルストレージ"><a class="header" href="#ファイルストレージ">ファイルストレージ</a></h3>
-<p>ファイルを置くためだけのサーバは設置しない．</p>
+<h2 id="os"><a class="header" href="#os">OS</a></h2>
 <ul>
-<li>Google ドライブ</li>
+<li>EndeavourOS</li>
+<li>Ubuntu</li>
+</ul>
+<p>WindowsおよびMacを選定候補外とし，Linuxディストリビューションの積極的に採用する．
+さらに，DasS<sup class="footnote-reference"><a href="#1">1</a></sup>により端末はデータレス化する．</p>
+<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<p>Google CloudやAWSなどのソリューションから選定．</p>
+</div>
+<h2 id="グループウェア-1"><a class="header" href="#グループウェア-1">グループウェア</a></h2>
+<p>業務を円滑に遂行するために，組織はグループウェアに対して下記の機能を要求する．
+コミュニケーションについては，社外とのやりとりはメールを用い，社内での閉じた連絡はチャットを利用する．</p>
+<div class="table-wrapper"><table><thead><tr><th>機能</th><th>社内標準</th><th>補足</th></tr></thead><tbody>
+<tr><td>Browser</td><td>Firefox</td><td>Rustを好む</td></tr>
+<tr><td>Mail<br>&lt;社外限&gt;</td><td>Tutanota</td><td>LinuxのメーラはThunderbirdが有名であり，かつMozillaが開発しているため利用したかったが，UIが肌に合わなかった．Tutanotaはセキュリティを強みにしているドイツ製のメールクライアント．Web形式のものでも無くはないが，メールの確認に逐一ブラウザを開くのは不便のため，基本的にはインストール型を採る．<br>OutlookやGmailと同様に，スケジュール共有機能も実装されている．</td></tr>
+<tr><td>Chat<br>&lt;社内限&gt;</td><td>Slack</td><td>Web会議も可</td></tr>
+<tr><td>Cloud Storage</td><td>DropBox</td><td>チャットアプリではファイルの送受信を禁止する．</td></tr>
+<tr><td>Portal</td><td>-</td><td>通達掲示板や承認ワークフローはスクラッチ開発により内製化</td></tr>
+</tbody></table>
+</div>
+<h2 id="itセキュリティ"><a class="header" href="#itセキュリティ">ITセキュリティ</a></h2>
+<p>平たく言えば，下記のようなことが間接的にも実現できればよい．</p>
+<h3 id="ドメイン管理"><a class="header" href="#ドメイン管理">ドメイン管理</a></h3>
+<ul>
+<li>Google Domains</li>
+<li>SSO</li>
+</ul>
+<h3 id="vpn"><a class="header" href="#vpn">VPN</a></h3>
+<ul>
+<li><a href="https://developers.cloudflare.com/warp-client/get-started/linux/">Cloudflare WARP</a></li>
+<li><a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/private-net/">Cloudflare Zero Trust</a></li>
+</ul>
+<h3 id="資産管理"><a class="header" href="#資産管理">資産管理</a></h3>
+<p>要検討．
+各PCにおいて，無許可のアプリインストールやUSBフラッシュメモリの使用は禁じたい．</p>
+<h3 id="インターネットアクセス"><a class="header" href="#インターネットアクセス">インターネットアクセス</a></h3>
+<ul>
+<li>プロキシサーバー</li>
+<li>ホワイトリスト</li>
 </ul>
 <h2 id="オフィス"><a class="header" href="#オフィス">オフィス</a></h2>
 <p>リモートワーク推奨にしたいが，「自宅で勤務できない」というケースも想定して企業としてオフィスは準備すべきだろう．</p>

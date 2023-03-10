@@ -14,7 +14,8 @@ My Opinion, or Fact?
 ## Entities
 
 - マイナースポーツテック
-- Rust-lang のコントリビュータ
+- 少数派の援護
+- Rustの企業的活用
 
 ## Targets
 
@@ -31,8 +32,8 @@ My Opinion, or Fact?
 
 1. Asynchronous
 
-    - Promiss(期限)とResult(成果)が担保し，勤務形態を制限しない．
-    - コアタイムを設定しない．
+    - Promiss(期限)とResult(成果)を担保し，就労環境を制限しない．
+    - コミットメントを果たすとき，Logは評価しない．
 
 2. Fail-Safe
 
@@ -41,13 +42,11 @@ My Opinion, or Fact?
 
 3. Nature
 
-    - プロモーターの役目は振興のみであり，本質を変えてはならない．
-    - 調和する．
-    - DX を言い訳に闇雲に破壊してはならない．
+    - 振興は本質を変えない．
 
 4. Accountability
 
-    - 論理的なポリシーに従うことが要請される．
+    - 論理的なポリシーに従うことを要請する．
 
 ## Introduction
 
